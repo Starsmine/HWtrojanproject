@@ -1,0 +1,528 @@
+2026-04-29 14:23:10,614 - INFO - Setting up OpenAI backend...
+2026-04-29 14:23:39,540 - INFO - Making API call attempt 1/3
+2026-04-29 14:23:44,863 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-29 14:23:44,879 - WARNING - API call attempt 1 failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************E-sA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-04-29 14:23:45,884 - INFO - Making API call attempt 2/3
+2026-04-29 14:23:46,142 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-29 14:23:46,142 - WARNING - API call attempt 2 failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************E-sA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-04-29 14:23:48,148 - INFO - Making API call attempt 3/3
+2026-04-29 14:23:48,321 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-29 14:23:48,324 - WARNING - API call attempt 3 failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************E-sA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-04-29 14:23:48,326 - ERROR - All 3 API call attempts failed
+2026-04-29 14:24:50,563 - INFO - Setting up OpenAI backend...
+2026-04-29 18:50:35,623 - INFO - Setting up OpenAI backend...
+2026-04-29 18:52:55,594 - INFO - Setting up OpenAI backend...
+2026-04-29 18:55:03,261 - INFO - Making API call attempt 1/3
+2026-04-29 18:55:08,476 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-29 18:55:08,482 - WARNING - API call attempt 1 failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************E-sA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-04-29 18:55:09,485 - INFO - Making API call attempt 2/3
+2026-04-29 18:55:09,670 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-29 18:55:09,673 - WARNING - API call attempt 2 failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************E-sA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-04-29 18:55:11,677 - INFO - Making API call attempt 3/3
+2026-04-29 18:55:11,960 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-29 18:55:11,963 - WARNING - API call attempt 3 failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************E-sA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-04-29 18:55:11,966 - ERROR - All 3 API call attempts failed
+2026-05-01 15:36:35,909 - INFO - Setting up OpenAI backend...
+2026-05-01 15:37:21,614 - INFO - Making API call attempt 1/3
+2026-05-01 15:37:27,603 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-01 15:37:27,605 - INFO - Retrying request to /chat/completions in 0.378782 seconds
+2026-05-01 15:37:28,202 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-01 15:37:28,203 - INFO - Retrying request to /chat/completions in 0.940515 seconds
+2026-05-01 15:37:30,278 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-01 15:37:30,282 - WARNING - API call attempt 1 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-05-01 15:37:31,284 - INFO - Making API call attempt 2/3
+2026-05-01 15:37:31,741 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-01 15:37:31,744 - INFO - Retrying request to /chat/completions in 0.419305 seconds
+2026-05-01 15:37:32,576 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-01 15:37:32,578 - INFO - Retrying request to /chat/completions in 0.774532 seconds
+2026-05-01 15:37:33,637 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-01 15:37:33,639 - WARNING - API call attempt 2 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-05-01 15:37:35,642 - INFO - Making API call attempt 3/3
+2026-05-01 15:37:35,872 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-01 15:37:35,873 - INFO - Retrying request to /chat/completions in 0.485934 seconds
+2026-05-01 15:37:37,097 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-01 15:37:37,100 - INFO - Retrying request to /chat/completions in 0.777233 seconds
+2026-05-01 15:37:38,252 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-01 15:37:38,254 - WARNING - API call attempt 3 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-05-01 15:37:38,255 - ERROR - All 3 API call attempts failed
+2026-05-01 15:39:30,318 - INFO - Making API call attempt 1/3
+2026-05-01 15:39:36,512 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 15:39:36,538 - INFO - API response received (1523 characters)
+2026-05-01 15:45:03,153 - INFO - Starting GHOST Trojan insertion job (v1)
+2026-05-01 15:45:03,155 - INFO - Model: gpt-5.4, Provider: OpenAI
+2026-05-01 15:45:03,156 - INFO - Threads: 2
+2026-05-01 15:45:03,188 - INFO - Loaded 2 designs from ./demo_designs
+2026-05-01 15:45:03,189 - INFO - Running subset of vulnerabilities: ['T1', 'T2']
+2026-05-01 15:45:03,191 - INFO - Created 4 tasks to process
+2026-05-01 15:45:03,194 - INFO - Starting task: alu_simple.v-T1-v1
+2026-05-01 15:45:03,199 - INFO - Starting task: alu_simple.v-T2-v1
+2026-05-01 15:45:03,203 - INFO - Task alu_simple.v-T1-v1: Constructing prompt
+2026-05-01 15:45:03,204 - INFO - Task alu_simple.v-T2-v1: Constructing prompt
+2026-05-01 15:45:03,207 - INFO - Task alu_simple.v-T1-v1: Making API call
+2026-05-01 15:45:03,210 - INFO - Task alu_simple.v-T2-v1: Making API call
+2026-05-01 15:45:03,214 - INFO - Making API call attempt 1/3
+2026-05-01 15:45:03,215 - INFO - Making API call attempt 1/3
+2026-05-01 15:45:08,095 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 15:45:08,099 - INFO - API response received (1058 characters)
+2026-05-01 15:45:08,101 - INFO - Task alu_simple.v-T2-v1: Extracting structured data
+2026-05-01 15:45:08,103 - INFO - Task alu_simple.v-T2-v1: Saving results
+2026-05-01 15:45:08,109 - INFO - Saved Trojaned design to: ./trojan_outputs\gpt-5.4\alu_simple\alu_simple_HT2_gpt-5.4_A1.v
+2026-05-01 15:45:08,115 - INFO - Task alu_simple.v-T2-v1: Completed successfully
+2026-05-01 15:45:08,117 - INFO - Starting task: shift_reg.v-T1-v1
+2026-05-01 15:45:08,120 - INFO - Task shift_reg.v-T1-v1: Constructing prompt
+2026-05-01 15:45:08,122 - INFO - Task shift_reg.v-T1-v1: Making API call
+2026-05-01 15:45:08,123 - INFO - Making API call attempt 1/3
+2026-05-01 15:45:09,086 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 15:45:09,091 - INFO - API response received (1512 characters)
+2026-05-01 15:45:09,093 - INFO - Task alu_simple.v-T1-v1: Extracting structured data
+2026-05-01 15:45:09,095 - INFO - Task alu_simple.v-T1-v1: Saving results
+2026-05-01 15:45:09,099 - INFO - Saved Trojaned design to: ./trojan_outputs\gpt-5.4\alu_simple\alu_simple_HT1_gpt-5.4_A1.v
+2026-05-01 15:45:09,103 - INFO - Task alu_simple.v-T1-v1: Completed successfully
+2026-05-01 15:45:09,105 - INFO - Starting task: shift_reg.v-T2-v1
+2026-05-01 15:45:09,108 - INFO - Task shift_reg.v-T2-v1: Constructing prompt
+2026-05-01 15:45:09,110 - INFO - Task shift_reg.v-T2-v1: Making API call
+2026-05-01 15:45:09,114 - INFO - Making API call attempt 1/3
+2026-05-01 15:45:13,761 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 15:45:13,765 - INFO - API response received (1108 characters)
+2026-05-01 15:45:13,766 - INFO - Task shift_reg.v-T1-v1: Extracting structured data
+2026-05-01 15:45:13,768 - INFO - Task shift_reg.v-T1-v1: Saving results
+2026-05-01 15:45:13,773 - INFO - Saved Trojaned design to: ./trojan_outputs\gpt-5.4\shift_reg\shift_reg_HT1_gpt-5.4_A1.v
+2026-05-01 15:45:13,776 - INFO - Task shift_reg.v-T1-v1: Completed successfully
+2026-05-01 15:45:14,033 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 15:45:14,036 - INFO - API response received (1229 characters)
+2026-05-01 15:45:14,038 - INFO - Task shift_reg.v-T2-v1: Extracting structured data
+2026-05-01 15:45:14,041 - INFO - Task shift_reg.v-T2-v1: Saving results
+2026-05-01 15:45:14,045 - INFO - Saved Trojaned design to: ./trojan_outputs\gpt-5.4\shift_reg\shift_reg_HT2_gpt-5.4_A1.v
+2026-05-01 15:45:14,049 - INFO - Task shift_reg.v-T2-v1: Completed successfully
+2026-05-01 15:45:14,057 - INFO - Summary: 4 successful, 0 skipped, 0 failed
+2026-05-01 15:48:47,120 - INFO - Setting up OpenAI backend...
+2026-05-01 15:48:47,929 - INFO - Making API call attempt 1/3
+2026-05-01 15:48:53,469 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 15:48:53,487 - INFO - API response received (1298 characters)
+2026-05-01 15:48:53,530 - INFO - Starting GHOST Trojan insertion job (v1)
+2026-05-01 15:48:53,533 - INFO - Model: gpt-5.4, Provider: OpenAI
+2026-05-01 15:48:53,535 - INFO - Threads: 2
+2026-05-01 15:48:53,559 - INFO - Loaded 2 designs from ./demo_designs
+2026-05-01 15:48:53,562 - INFO - Running subset of vulnerabilities: ['T1', 'T2']
+2026-05-01 15:48:53,564 - INFO - Created 4 tasks to process
+2026-05-01 15:48:53,566 - INFO - Starting task: alu_simple.v-T1-v1
+2026-05-01 15:48:53,572 - INFO - Starting task: alu_simple.v-T2-v1
+2026-05-01 15:48:53,578 - INFO - Task alu_simple.v-T1-v1: Files already exist, skipping
+2026-05-01 15:48:53,580 - INFO - Task alu_simple.v-T2-v1: Files already exist, skipping
+2026-05-01 15:48:53,582 - INFO - Starting task: shift_reg.v-T1-v1
+2026-05-01 15:48:53,584 - INFO - Starting task: shift_reg.v-T2-v1
+2026-05-01 15:48:53,588 - INFO - Task shift_reg.v-T1-v1: Files already exist, skipping
+2026-05-01 15:48:53,590 - INFO - Task shift_reg.v-T2-v1: Files already exist, skipping
+2026-05-01 15:48:53,614 - INFO - Summary: 0 successful, 4 skipped, 0 failed
+2026-05-01 15:55:47,896 - INFO - Setting up OpenAI backend...
+2026-05-01 15:55:48,783 - INFO - Making API call attempt 1/3
+2026-05-01 15:55:55,115 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 15:55:55,136 - INFO - API response received (1125 characters)
+2026-05-01 15:55:55,183 - INFO - Starting GHOST Trojan insertion job (v1)
+2026-05-01 15:55:55,186 - INFO - Model: gpt-5.4, Provider: OpenAI
+2026-05-01 15:55:55,188 - INFO - Threads: 2
+2026-05-01 15:55:55,197 - INFO - Loaded 2 designs from ./demo_designs
+2026-05-01 15:55:55,199 - INFO - Running subset of vulnerabilities: ['T1', 'T2']
+2026-05-01 15:55:55,201 - INFO - Created 4 tasks to process
+2026-05-01 15:55:55,203 - INFO - Starting task: alu_simple.v-T1-v1
+2026-05-01 15:55:55,211 - INFO - Starting task: alu_simple.v-T2-v1
+2026-05-01 15:55:55,214 - INFO - Task alu_simple.v-T1-v1: Constructing prompt
+2026-05-01 15:55:55,217 - INFO - Task alu_simple.v-T2-v1: Constructing prompt
+2026-05-01 15:55:55,218 - INFO - Task alu_simple.v-T1-v1: Making API call
+2026-05-01 15:55:55,220 - INFO - Task alu_simple.v-T2-v1: Making API call
+2026-05-01 15:55:55,223 - INFO - Making API call attempt 1/3
+2026-05-01 15:55:55,225 - INFO - Making API call attempt 1/3
+2026-05-01 15:56:01,254 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 15:56:01,258 - INFO - API response received (1567 characters)
+2026-05-01 15:56:01,260 - INFO - Task alu_simple.v-T2-v1: Extracting structured data
+2026-05-01 15:56:01,262 - INFO - Task alu_simple.v-T2-v1: Saving results
+2026-05-01 15:56:01,270 - INFO - Saved Trojaned design to: ./trojan_outputs\gpt-5.4\alu_simple\alu_simple_HT2_gpt-5.4_A1.v
+2026-05-01 15:56:01,275 - INFO - Task alu_simple.v-T2-v1: Completed successfully
+2026-05-01 15:56:01,277 - INFO - Starting task: shift_reg.v-T1-v1
+2026-05-01 15:56:01,280 - INFO - Task shift_reg.v-T1-v1: Constructing prompt
+2026-05-01 15:56:01,282 - INFO - Task shift_reg.v-T1-v1: Making API call
+2026-05-01 15:56:01,284 - INFO - Making API call attempt 1/3
+2026-05-01 15:56:03,527 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 15:56:03,531 - INFO - API response received (2375 characters)
+2026-05-01 15:56:03,532 - INFO - Task alu_simple.v-T1-v1: Extracting structured data
+2026-05-01 15:56:03,535 - INFO - Task alu_simple.v-T1-v1: Saving results
+2026-05-01 15:56:03,540 - INFO - Saved Trojaned design to: ./trojan_outputs\gpt-5.4\alu_simple\alu_simple_HT1_gpt-5.4_A1.v
+2026-05-01 15:56:03,544 - INFO - Task alu_simple.v-T1-v1: Completed successfully
+2026-05-01 15:56:03,546 - INFO - Starting task: shift_reg.v-T2-v1
+2026-05-01 15:56:03,549 - INFO - Task shift_reg.v-T2-v1: Constructing prompt
+2026-05-01 15:56:03,551 - INFO - Task shift_reg.v-T2-v1: Making API call
+2026-05-01 15:56:03,552 - INFO - Making API call attempt 1/3
+2026-05-01 15:56:08,646 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 15:56:08,649 - INFO - API response received (1380 characters)
+2026-05-01 15:56:08,651 - INFO - Task shift_reg.v-T1-v1: Extracting structured data
+2026-05-01 15:56:08,653 - INFO - Task shift_reg.v-T1-v1: Saving results
+2026-05-01 15:56:08,657 - INFO - Saved Trojaned design to: ./trojan_outputs\gpt-5.4\shift_reg\shift_reg_HT1_gpt-5.4_A1.v
+2026-05-01 15:56:08,660 - INFO - Task shift_reg.v-T1-v1: Completed successfully
+2026-05-01 15:56:08,982 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 15:56:08,985 - INFO - API response received (1253 characters)
+2026-05-01 15:56:08,987 - INFO - Task shift_reg.v-T2-v1: Extracting structured data
+2026-05-01 15:56:08,989 - INFO - Task shift_reg.v-T2-v1: Saving results
+2026-05-01 15:56:08,995 - INFO - Saved Trojaned design to: ./trojan_outputs\gpt-5.4\shift_reg\shift_reg_HT2_gpt-5.4_A1.v
+2026-05-01 15:56:08,998 - INFO - Task shift_reg.v-T2-v1: Completed successfully
+2026-05-01 15:56:09,004 - INFO - Summary: 4 successful, 0 skipped, 0 failed
+2026-05-01 17:51:55,401 - INFO - Setting up OpenAI backend...
+2026-05-01 17:51:56,978 - INFO - Making API call attempt 1/3
+2026-05-01 17:52:07,571 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 17:52:07,595 - INFO - API response received (1981 characters)
+2026-05-01 17:52:07,650 - INFO - Starting GHOST Trojan insertion job (v1)
+2026-05-01 17:52:07,652 - INFO - Model: gpt-4.1, Provider: OpenAI
+2026-05-01 17:52:07,654 - INFO - Threads: 2
+2026-05-01 17:52:07,687 - INFO - Loaded 2 designs from ./demo_designs
+2026-05-01 17:52:07,689 - INFO - Running subset of vulnerabilities: ['T1', 'T2']
+2026-05-01 17:52:07,691 - INFO - Created 4 tasks to process
+2026-05-01 17:52:07,695 - INFO - Starting task: alu_simple.v-T1-v1
+2026-05-01 17:52:07,700 - INFO - Starting task: alu_simple.v-T2-v1
+2026-05-01 17:52:07,701 - INFO - Task alu_simple.v-T1-v1: Constructing prompt
+2026-05-01 17:52:07,718 - INFO - Task alu_simple.v-T2-v1: Constructing prompt
+2026-05-01 17:52:07,720 - INFO - Task alu_simple.v-T1-v1: Making API call
+2026-05-01 17:52:07,722 - INFO - Task alu_simple.v-T2-v1: Making API call
+2026-05-01 17:52:07,726 - INFO - Making API call attempt 1/3
+2026-05-01 17:52:07,730 - INFO - Making API call attempt 1/3
+2026-05-01 17:52:14,634 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 17:52:14,638 - INFO - API response received (2681 characters)
+2026-05-01 17:52:14,640 - INFO - Task alu_simple.v-T2-v1: Extracting structured data
+2026-05-01 17:52:14,641 - INFO - Task alu_simple.v-T2-v1: Saving results
+2026-05-01 17:52:14,648 - INFO - Saved Trojaned design to: ./trojan_outputs\gpt-4.1\alu_simple\alu_simple_HT2_gpt-4.1_A1.v
+2026-05-01 17:52:14,652 - INFO - Task alu_simple.v-T2-v1: Completed successfully
+2026-05-01 17:52:14,654 - INFO - Starting task: shift_reg.v-T1-v1
+2026-05-01 17:52:14,658 - INFO - Task shift_reg.v-T1-v1: Constructing prompt
+2026-05-01 17:52:14,660 - INFO - Task shift_reg.v-T1-v1: Making API call
+2026-05-01 17:52:14,662 - INFO - Making API call attempt 1/3
+2026-05-01 17:52:15,304 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 17:52:15,308 - INFO - API response received (2150 characters)
+2026-05-01 17:52:15,311 - INFO - Task alu_simple.v-T1-v1: Extracting structured data
+2026-05-01 17:52:15,312 - INFO - Task alu_simple.v-T1-v1: Saving results
+2026-05-01 17:52:15,316 - INFO - Saved Trojaned design to: ./trojan_outputs\gpt-4.1\alu_simple\alu_simple_HT1_gpt-4.1_A1.v
+2026-05-01 17:52:15,321 - INFO - Task alu_simple.v-T1-v1: Completed successfully
+2026-05-01 17:52:15,324 - INFO - Starting task: shift_reg.v-T2-v1
+2026-05-01 17:52:15,327 - INFO - Task shift_reg.v-T2-v1: Constructing prompt
+2026-05-01 17:52:15,329 - INFO - Task shift_reg.v-T2-v1: Making API call
+2026-05-01 17:52:15,331 - INFO - Making API call attempt 1/3
+2026-05-01 17:52:18,963 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 17:52:18,967 - INFO - API response received (1984 characters)
+2026-05-01 17:52:18,970 - INFO - Task shift_reg.v-T1-v1: Extracting structured data
+2026-05-01 17:52:18,973 - INFO - Task shift_reg.v-T1-v1: Saving results
+2026-05-01 17:52:18,979 - INFO - Saved Trojaned design to: ./trojan_outputs\gpt-4.1\shift_reg\shift_reg_HT1_gpt-4.1_A1.v
+2026-05-01 17:52:18,983 - INFO - Task shift_reg.v-T1-v1: Completed successfully
+2026-05-01 17:52:20,040 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 17:52:20,044 - INFO - API response received (2004 characters)
+2026-05-01 17:52:20,046 - INFO - Task shift_reg.v-T2-v1: Extracting structured data
+2026-05-01 17:52:20,048 - INFO - Task shift_reg.v-T2-v1: Saving results
+2026-05-01 17:52:20,054 - INFO - Saved Trojaned design to: ./trojan_outputs\gpt-4.1\shift_reg\shift_reg_HT2_gpt-4.1_A1.v
+2026-05-01 17:52:20,058 - INFO - Task shift_reg.v-T2-v1: Completed successfully
+2026-05-01 17:52:20,066 - INFO - Summary: 4 successful, 0 skipped, 0 failed
+2026-05-01 17:57:57,676 - INFO - Setting up OpenAI backend...
+2026-05-01 17:57:57,754 - INFO - Starting GHOST Trojan insertion job (v1)
+2026-05-01 17:57:57,756 - INFO - Model: gpt-4.1, Provider: OpenAI
+2026-05-01 17:57:57,757 - INFO - Threads: 2
+2026-05-01 17:57:57,779 - INFO - Loaded 2 designs from ./demo_designs
+2026-05-01 17:57:57,781 - INFO - Running subset of vulnerabilities: ['T1', 'T2']
+2026-05-01 17:57:57,783 - INFO - Created 4 tasks to process
+2026-05-01 17:57:57,787 - INFO - Starting task: alu_simple.v-T1-v1
+2026-05-01 17:57:57,805 - INFO - Starting task: alu_simple.v-T2-v1
+2026-05-01 17:57:57,807 - INFO - Task alu_simple.v-T1-v1: Files already exist, skipping
+2026-05-01 17:57:57,814 - INFO - Task alu_simple.v-T2-v1: Files already exist, skipping
+2026-05-01 17:57:57,815 - INFO - Starting task: shift_reg.v-T1-v1
+2026-05-01 17:57:57,818 - INFO - Starting task: shift_reg.v-T2-v1
+2026-05-01 17:57:57,823 - INFO - Task shift_reg.v-T1-v1: Files already exist, skipping
+2026-05-01 17:57:57,826 - INFO - Task shift_reg.v-T2-v1: Files already exist, skipping
+2026-05-01 17:57:57,855 - INFO - Summary: 0 successful, 4 skipped, 0 failed
+2026-05-01 17:57:57,958 - INFO - Starting GHOST Trojan insertion job (v1)
+2026-05-01 17:57:57,959 - INFO - Model: gpt-4.1, Provider: OpenAI
+2026-05-01 17:57:57,960 - INFO - Threads: 2
+2026-05-01 17:57:57,998 - INFO - Loaded 2 designs from ./batch_trojan_designs
+2026-05-01 17:57:58,000 - INFO - Running all vulnerabilities: ['T1', 'T2', 'T3', 'T4']
+2026-05-01 17:57:58,003 - INFO - Created 8 tasks to process
+2026-05-01 17:57:58,006 - INFO - Starting task: aes_sbox.v-T1-v1
+2026-05-01 17:57:58,010 - INFO - Starting task: aes_sbox.v-T2-v1
+2026-05-01 17:57:58,018 - INFO - Task aes_sbox.v-T1-v1: Constructing prompt
+2026-05-01 17:57:58,019 - INFO - Task aes_sbox.v-T2-v1: Constructing prompt
+2026-05-01 17:57:58,020 - INFO - Task aes_sbox.v-T1-v1: Making API call
+2026-05-01 17:57:58,023 - INFO - Task aes_sbox.v-T2-v1: Making API call
+2026-05-01 17:57:58,025 - ERROR - Task aes_sbox.v-T1-v1: Failed with error: Client not initialized. Call setup() first.
+2026-05-01 17:57:58,027 - ERROR - Task aes_sbox.v-T2-v1: Failed with error: Client not initialized. Call setup() first.
+2026-05-01 17:57:58,029 - INFO - Starting task: aes_sbox.v-T3-v1
+2026-05-01 17:57:58,030 - INFO - Starting task: aes_sbox.v-T4-v1
+2026-05-01 17:57:58,036 - INFO - Task aes_sbox.v-T3-v1: Constructing prompt
+2026-05-01 17:57:58,039 - INFO - Task aes_sbox.v-T4-v1: Constructing prompt
+2026-05-01 17:57:58,040 - INFO - Task aes_sbox.v-T3-v1: Making API call
+2026-05-01 17:57:58,042 - INFO - Task aes_sbox.v-T4-v1: Making API call
+2026-05-01 17:57:58,044 - ERROR - Task aes_sbox.v-T3-v1: Failed with error: Client not initialized. Call setup() first.
+2026-05-01 17:57:58,047 - ERROR - Task aes_sbox.v-T4-v1: Failed with error: Client not initialized. Call setup() first.
+2026-05-01 17:57:58,048 - INFO - Starting task: uart_controller.v-T1-v1
+2026-05-01 17:57:58,050 - INFO - Starting task: uart_controller.v-T2-v1
+2026-05-01 17:57:58,053 - INFO - Task uart_controller.v-T1-v1: Constructing prompt
+2026-05-01 17:57:58,054 - INFO - Task uart_controller.v-T2-v1: Constructing prompt
+2026-05-01 17:57:58,056 - INFO - Task uart_controller.v-T1-v1: Making API call
+2026-05-01 17:57:58,057 - INFO - Task uart_controller.v-T2-v1: Making API call
+2026-05-01 17:57:58,062 - ERROR - Task uart_controller.v-T1-v1: Failed with error: Client not initialized. Call setup() first.
+2026-05-01 17:57:58,063 - ERROR - Task uart_controller.v-T2-v1: Failed with error: Client not initialized. Call setup() first.
+2026-05-01 17:57:58,066 - INFO - Starting task: uart_controller.v-T3-v1
+2026-05-01 17:57:58,068 - INFO - Starting task: uart_controller.v-T4-v1
+2026-05-01 17:57:58,071 - INFO - Task uart_controller.v-T3-v1: Constructing prompt
+2026-05-01 17:57:58,074 - INFO - Task uart_controller.v-T4-v1: Constructing prompt
+2026-05-01 17:57:58,075 - INFO - Task uart_controller.v-T3-v1: Making API call
+2026-05-01 17:57:58,077 - INFO - Task uart_controller.v-T4-v1: Making API call
+2026-05-01 17:57:58,079 - ERROR - Task uart_controller.v-T3-v1: Failed with error: Client not initialized. Call setup() first.
+2026-05-01 17:57:58,081 - ERROR - Task uart_controller.v-T4-v1: Failed with error: Client not initialized. Call setup() first.
+2026-05-01 17:57:58,090 - INFO - Summary: 0 successful, 0 skipped, 8 failed
+2026-05-01 17:57:58,091 - ERROR - Failed task: aes_sbox.v - T1: Client not initialized. Call setup() first.
+2026-05-01 17:57:58,094 - ERROR - Failed task: aes_sbox.v - T2: Client not initialized. Call setup() first.
+2026-05-01 17:57:58,096 - ERROR - Failed task: aes_sbox.v - T3: Client not initialized. Call setup() first.
+2026-05-01 17:57:58,098 - ERROR - Failed task: aes_sbox.v - T4: Client not initialized. Call setup() first.
+2026-05-01 17:57:58,101 - ERROR - Failed task: uart_controller.v - T1: Client not initialized. Call setup() first.
+2026-05-01 17:57:58,102 - ERROR - Failed task: uart_controller.v - T2: Client not initialized. Call setup() first.
+2026-05-01 17:57:58,105 - ERROR - Failed task: uart_controller.v - T3: Client not initialized. Call setup() first.
+2026-05-01 17:57:58,107 - ERROR - Failed task: uart_controller.v - T4: Client not initialized. Call setup() first.
+2026-05-01 17:58:32,797 - INFO - Setting up OpenAI backend...
+2026-05-01 17:58:33,728 - INFO - Making API call attempt 1/3
+2026-05-01 17:58:39,387 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 17:58:39,406 - INFO - API response received (2102 characters)
+2026-05-01 17:58:39,451 - INFO - Starting GHOST Trojan insertion job (v1)
+2026-05-01 17:58:39,454 - INFO - Model: gpt-4.1, Provider: OpenAI
+2026-05-01 17:58:39,457 - INFO - Threads: 2
+2026-05-01 17:58:39,463 - INFO - Loaded 2 designs from ./demo_designs
+2026-05-01 17:58:39,466 - INFO - Running subset of vulnerabilities: ['T1', 'T2']
+2026-05-01 17:58:39,469 - INFO - Created 4 tasks to process
+2026-05-01 17:58:39,473 - INFO - Starting task: alu_simple.v-T1-v1
+2026-05-01 17:58:39,495 - INFO - Starting task: alu_simple.v-T2-v1
+2026-05-01 17:58:39,498 - INFO - Task alu_simple.v-T1-v1: Files already exist, skipping
+2026-05-01 17:58:39,503 - INFO - Task alu_simple.v-T2-v1: Files already exist, skipping
+2026-05-01 17:58:39,505 - INFO - Starting task: shift_reg.v-T1-v1
+2026-05-01 17:58:39,507 - INFO - Starting task: shift_reg.v-T2-v1
+2026-05-01 17:58:39,511 - INFO - Task shift_reg.v-T1-v1: Files already exist, skipping
+2026-05-01 17:58:39,515 - INFO - Task shift_reg.v-T2-v1: Files already exist, skipping
+2026-05-01 17:58:39,540 - INFO - Summary: 0 successful, 4 skipped, 0 failed
+2026-05-01 17:58:39,639 - INFO - Starting GHOST Trojan insertion job (v1)
+2026-05-01 17:58:39,641 - INFO - Model: gpt-4.1, Provider: OpenAI
+2026-05-01 17:58:39,643 - INFO - Threads: 2
+2026-05-01 17:58:39,665 - INFO - Loaded 2 designs from ./batch_trojan_designs
+2026-05-01 17:58:39,666 - INFO - Running all vulnerabilities: ['T1', 'T2', 'T3', 'T4']
+2026-05-01 17:58:39,669 - INFO - Created 8 tasks to process
+2026-05-01 17:58:39,672 - INFO - Starting task: aes_sbox.v-T1-v1
+2026-05-01 17:58:39,675 - INFO - Starting task: aes_sbox.v-T2-v1
+2026-05-01 17:58:39,679 - INFO - Task aes_sbox.v-T1-v1: Constructing prompt
+2026-05-01 17:58:39,684 - INFO - Task aes_sbox.v-T2-v1: Constructing prompt
+2026-05-01 17:58:39,685 - INFO - Task aes_sbox.v-T1-v1: Making API call
+2026-05-01 17:58:39,687 - INFO - Task aes_sbox.v-T2-v1: Making API call
+2026-05-01 17:58:39,689 - INFO - Making API call attempt 1/3
+2026-05-01 17:58:39,691 - INFO - Making API call attempt 1/3
+2026-05-01 17:58:46,054 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 17:58:46,059 - INFO - API response received (2324 characters)
+2026-05-01 17:58:46,061 - INFO - Task aes_sbox.v-T1-v1: Extracting structured data
+2026-05-01 17:58:46,063 - INFO - Task aes_sbox.v-T1-v1: Saving results
+2026-05-01 17:58:46,071 - INFO - Saved Trojaned design to: ./trojaned_outputs\gpt-4.1\aes_sbox\aes_sbox_HT1_gpt-4.1_A1.v
+2026-05-01 17:58:46,075 - INFO - Task aes_sbox.v-T1-v1: Completed successfully
+2026-05-01 17:58:46,077 - INFO - Starting task: aes_sbox.v-T3-v1
+2026-05-01 17:58:46,080 - INFO - Task aes_sbox.v-T3-v1: Constructing prompt
+2026-05-01 17:58:46,084 - INFO - Task aes_sbox.v-T3-v1: Making API call
+2026-05-01 17:58:46,085 - INFO - Making API call attempt 1/3
+2026-05-01 17:58:50,026 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 17:58:50,034 - INFO - API response received (2813 characters)
+2026-05-01 17:58:50,035 - INFO - Task aes_sbox.v-T2-v1: Extracting structured data
+2026-05-01 17:58:50,037 - INFO - Task aes_sbox.v-T2-v1: Saving results
+2026-05-01 17:58:50,042 - INFO - Saved Trojaned design to: ./trojaned_outputs\gpt-4.1\aes_sbox\aes_sbox_HT2_gpt-4.1_A1.v
+2026-05-01 17:58:50,046 - INFO - Task aes_sbox.v-T2-v1: Completed successfully
+2026-05-01 17:58:50,048 - INFO - Starting task: aes_sbox.v-T4-v1
+2026-05-01 17:58:50,051 - INFO - Task aes_sbox.v-T4-v1: Constructing prompt
+2026-05-01 17:58:50,053 - INFO - Task aes_sbox.v-T4-v1: Making API call
+2026-05-01 17:58:50,056 - INFO - Making API call attempt 1/3
+2026-05-01 17:58:55,368 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 17:58:55,374 - INFO - API response received (3039 characters)
+2026-05-01 17:58:55,376 - INFO - Task aes_sbox.v-T3-v1: Extracting structured data
+2026-05-01 17:58:55,379 - INFO - Task aes_sbox.v-T3-v1: Saving results
+2026-05-01 17:58:55,385 - INFO - Saved Trojaned design to: ./trojaned_outputs\gpt-4.1\aes_sbox\aes_sbox_HT3_gpt-4.1_A1.v
+2026-05-01 17:58:55,391 - INFO - Task aes_sbox.v-T3-v1: Completed successfully
+2026-05-01 17:58:55,394 - INFO - Starting task: uart_controller.v-T1-v1
+2026-05-01 17:58:55,398 - INFO - Task uart_controller.v-T1-v1: Constructing prompt
+2026-05-01 17:58:55,400 - INFO - Task uart_controller.v-T1-v1: Making API call
+2026-05-01 17:58:55,402 - INFO - Making API call attempt 1/3
+2026-05-01 17:58:57,129 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 17:58:57,136 - INFO - API response received (2759 characters)
+2026-05-01 17:58:57,138 - INFO - Task aes_sbox.v-T4-v1: Extracting structured data
+2026-05-01 17:58:57,140 - INFO - Task aes_sbox.v-T4-v1: Saving results
+2026-05-01 17:58:57,147 - INFO - Saved Trojaned design to: ./trojaned_outputs\gpt-4.1\aes_sbox\aes_sbox_HT4_gpt-4.1_A1.v
+2026-05-01 17:58:57,157 - INFO - Task aes_sbox.v-T4-v1: Completed successfully
+2026-05-01 17:58:57,159 - INFO - Starting task: uart_controller.v-T2-v1
+2026-05-01 17:58:57,164 - INFO - Task uart_controller.v-T2-v1: Constructing prompt
+2026-05-01 17:58:57,168 - INFO - Task uart_controller.v-T2-v1: Making API call
+2026-05-01 17:58:57,173 - INFO - Making API call attempt 1/3
+2026-05-01 17:59:01,925 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 17:59:01,927 - INFO - API response received (2408 characters)
+2026-05-01 17:59:01,930 - INFO - Task uart_controller.v-T1-v1: Extracting structured data
+2026-05-01 17:59:01,933 - INFO - Task uart_controller.v-T1-v1: Saving results
+2026-05-01 17:59:01,938 - INFO - Saved Trojaned design to: ./trojaned_outputs\gpt-4.1\uart_controller\uart_controller_HT1_gpt-4.1_A1.v
+2026-05-01 17:59:01,944 - INFO - Task uart_controller.v-T1-v1: Completed successfully
+2026-05-01 17:59:01,947 - INFO - Starting task: uart_controller.v-T3-v1
+2026-05-01 17:59:01,950 - INFO - Task uart_controller.v-T3-v1: Constructing prompt
+2026-05-01 17:59:01,952 - INFO - Task uart_controller.v-T3-v1: Making API call
+2026-05-01 17:59:01,954 - INFO - Making API call attempt 1/3
+2026-05-01 17:59:05,999 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 17:59:06,013 - INFO - API response received (4147 characters)
+2026-05-01 17:59:06,016 - INFO - Task uart_controller.v-T2-v1: Extracting structured data
+2026-05-01 17:59:06,018 - INFO - Task uart_controller.v-T2-v1: Saving results
+2026-05-01 17:59:06,025 - INFO - Saved Trojaned design to: ./trojaned_outputs\gpt-4.1\uart_controller\uart_controller_HT2_gpt-4.1_A1.v
+2026-05-01 17:59:06,030 - INFO - Task uart_controller.v-T2-v1: Completed successfully
+2026-05-01 17:59:06,033 - INFO - Starting task: uart_controller.v-T4-v1
+2026-05-01 17:59:06,036 - INFO - Task uart_controller.v-T4-v1: Constructing prompt
+2026-05-01 17:59:06,038 - INFO - Task uart_controller.v-T4-v1: Making API call
+2026-05-01 17:59:06,040 - INFO - Making API call attempt 1/3
+2026-05-01 17:59:10,039 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 17:59:10,043 - INFO - API response received (3411 characters)
+2026-05-01 17:59:10,045 - INFO - Task uart_controller.v-T3-v1: Extracting structured data
+2026-05-01 17:59:10,049 - INFO - Task uart_controller.v-T3-v1: Saving results
+2026-05-01 17:59:10,054 - INFO - Saved Trojaned design to: ./trojaned_outputs\gpt-4.1\uart_controller\uart_controller_HT3_gpt-4.1_A1.v
+2026-05-01 17:59:10,059 - INFO - Task uart_controller.v-T3-v1: Completed successfully
+2026-05-01 17:59:14,129 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 17:59:14,134 - INFO - API response received (2903 characters)
+2026-05-01 17:59:14,135 - INFO - Task uart_controller.v-T4-v1: Extracting structured data
+2026-05-01 17:59:14,137 - INFO - Task uart_controller.v-T4-v1: Saving results
+2026-05-01 17:59:14,142 - INFO - Saved Trojaned design to: ./trojaned_outputs\gpt-4.1\uart_controller\uart_controller_HT4_gpt-4.1_A1.v
+2026-05-01 17:59:14,146 - INFO - Task uart_controller.v-T4-v1: Completed successfully
+2026-05-01 17:59:14,154 - INFO - Summary: 8 successful, 0 skipped, 0 failed
+2026-05-01 18:01:27,209 - INFO - Setting up OpenAI backend...
+2026-05-01 18:01:28,564 - INFO - Making API call attempt 1/3
+2026-05-01 18:01:37,625 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 18:01:37,657 - INFO - API response received (1881 characters)
+2026-05-01 18:01:37,708 - INFO - Starting GHOST Trojan insertion job (v1)
+2026-05-01 18:01:37,712 - INFO - Model: gpt-4.1, Provider: OpenAI
+2026-05-01 18:01:37,714 - INFO - Threads: 2
+2026-05-01 18:01:37,737 - INFO - Loaded 2 designs from ./demo_designs
+2026-05-01 18:01:37,739 - INFO - Running subset of vulnerabilities: ['T1', 'T2']
+2026-05-01 18:01:37,741 - INFO - Created 4 tasks to process
+2026-05-01 18:01:37,743 - INFO - Starting task: alu_simple.v-T1-v1
+2026-05-01 18:01:37,749 - INFO - Starting task: alu_simple.v-T2-v1
+2026-05-01 18:01:37,754 - INFO - Task alu_simple.v-T1-v1: Constructing prompt
+2026-05-01 18:01:37,755 - INFO - Task alu_simple.v-T2-v1: Constructing prompt
+2026-05-01 18:01:37,759 - INFO - Task alu_simple.v-T1-v1: Making API call
+2026-05-01 18:01:37,762 - INFO - Task alu_simple.v-T2-v1: Making API call
+2026-05-01 18:01:37,767 - INFO - Making API call attempt 1/3
+2026-05-01 18:01:37,778 - INFO - Making API call attempt 1/3
+2026-05-01 18:01:49,402 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 18:01:49,407 - INFO - API response received (2037 characters)
+2026-05-01 18:01:49,408 - INFO - Task alu_simple.v-T1-v1: Extracting structured data
+2026-05-01 18:01:49,411 - INFO - Task alu_simple.v-T1-v1: Saving results
+2026-05-01 18:01:49,420 - INFO - Saved Trojaned design to: ./trojan_outputs\gpt-4.1\alu_simple\alu_simple_HT1_gpt-4.1_A1.v
+2026-05-01 18:01:49,425 - INFO - Task alu_simple.v-T1-v1: Completed successfully
+2026-05-01 18:01:49,427 - INFO - Starting task: shift_reg.v-T1-v1
+2026-05-01 18:01:49,432 - INFO - Task shift_reg.v-T1-v1: Constructing prompt
+2026-05-01 18:01:49,434 - INFO - Task shift_reg.v-T1-v1: Making API call
+2026-05-01 18:01:49,437 - INFO - Making API call attempt 1/3
+2026-05-01 18:01:55,693 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 18:01:55,699 - INFO - API response received (1838 characters)
+2026-05-01 18:01:55,701 - INFO - Task shift_reg.v-T1-v1: Extracting structured data
+2026-05-01 18:01:55,703 - INFO - Task shift_reg.v-T1-v1: Saving results
+2026-05-01 18:01:55,707 - INFO - Saved Trojaned design to: ./trojan_outputs\gpt-4.1\shift_reg\shift_reg_HT1_gpt-4.1_A1.v
+2026-05-01 18:01:55,713 - INFO - Task shift_reg.v-T1-v1: Completed successfully
+2026-05-01 18:01:55,716 - INFO - Starting task: shift_reg.v-T2-v1
+2026-05-01 18:01:55,719 - INFO - Task shift_reg.v-T2-v1: Constructing prompt
+2026-05-01 18:01:55,722 - INFO - Task shift_reg.v-T2-v1: Making API call
+2026-05-01 18:01:55,723 - INFO - Making API call attempt 1/3
+2026-05-01 18:01:57,525 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 18:01:57,531 - INFO - API response received (3006 characters)
+2026-05-01 18:01:57,533 - INFO - Task alu_simple.v-T2-v1: Extracting structured data
+2026-05-01 18:01:57,536 - INFO - Task alu_simple.v-T2-v1: Saving results
+2026-05-01 18:01:57,543 - INFO - Saved Trojaned design to: ./trojan_outputs\gpt-4.1\alu_simple\alu_simple_HT2_gpt-4.1_A1.v
+2026-05-01 18:01:57,551 - INFO - Task alu_simple.v-T2-v1: Completed successfully
+2026-05-01 18:02:04,330 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 18:02:04,337 - INFO - API response received (2495 characters)
+2026-05-01 18:02:04,339 - INFO - Task shift_reg.v-T2-v1: Extracting structured data
+2026-05-01 18:02:04,341 - INFO - Task shift_reg.v-T2-v1: Saving results
+2026-05-01 18:02:04,345 - INFO - Saved Trojaned design to: ./trojan_outputs\gpt-4.1\shift_reg\shift_reg_HT2_gpt-4.1_A1.v
+2026-05-01 18:02:04,350 - INFO - Task shift_reg.v-T2-v1: Completed successfully
+2026-05-01 18:02:04,357 - INFO - Summary: 4 successful, 0 skipped, 0 failed
+2026-05-01 18:02:04,470 - INFO - Making API call attempt 1/3
+2026-05-01 18:02:09,838 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 18:02:09,843 - INFO - API response received (3155 characters)
+2026-05-01 18:02:09,884 - INFO - Starting GHOST Trojan insertion job (v1)
+2026-05-01 18:02:09,887 - INFO - Model: gpt-4.1, Provider: OpenAI
+2026-05-01 18:02:09,889 - INFO - Threads: 2
+2026-05-01 18:02:09,923 - INFO - Loaded 2 designs from ./batch_trojan_designs
+2026-05-01 18:02:09,925 - INFO - Running all vulnerabilities: ['T1', 'T2', 'T3', 'T4']
+2026-05-01 18:02:09,927 - INFO - Created 8 tasks to process
+2026-05-01 18:02:09,931 - INFO - Starting task: aes_sbox.v-T1-v1
+2026-05-01 18:02:09,937 - INFO - Starting task: aes_sbox.v-T2-v1
+2026-05-01 18:02:09,939 - INFO - Task aes_sbox.v-T1-v1: Constructing prompt
+2026-05-01 18:02:09,944 - INFO - Task aes_sbox.v-T2-v1: Constructing prompt
+2026-05-01 18:02:09,946 - INFO - Task aes_sbox.v-T1-v1: Making API call
+2026-05-01 18:02:09,949 - INFO - Task aes_sbox.v-T2-v1: Making API call
+2026-05-01 18:02:09,953 - INFO - Making API call attempt 1/3
+2026-05-01 18:02:09,955 - INFO - Making API call attempt 1/3
+2026-05-01 18:02:18,956 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 18:02:18,960 - INFO - API response received (2783 characters)
+2026-05-01 18:02:18,962 - INFO - Task aes_sbox.v-T2-v1: Extracting structured data
+2026-05-01 18:02:18,966 - INFO - Task aes_sbox.v-T2-v1: Saving results
+2026-05-01 18:02:18,975 - INFO - Saved Trojaned design to: ./trojaned_outputs\gpt-4.1\aes_sbox\aes_sbox_HT2_gpt-4.1_A1.v
+2026-05-01 18:02:18,981 - INFO - Task aes_sbox.v-T2-v1: Completed successfully
+2026-05-01 18:02:18,984 - INFO - Starting task: aes_sbox.v-T3-v1
+2026-05-01 18:02:18,986 - INFO - Task aes_sbox.v-T3-v1: Constructing prompt
+2026-05-01 18:02:18,988 - INFO - Task aes_sbox.v-T3-v1: Making API call
+2026-05-01 18:02:18,991 - INFO - Making API call attempt 1/3
+2026-05-01 18:02:21,273 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 18:02:21,285 - INFO - API response received (1900 characters)
+2026-05-01 18:02:21,286 - INFO - Task aes_sbox.v-T1-v1: Extracting structured data
+2026-05-01 18:02:21,289 - INFO - Task aes_sbox.v-T1-v1: Saving results
+2026-05-01 18:02:21,294 - INFO - Saved Trojaned design to: ./trojaned_outputs\gpt-4.1\aes_sbox\aes_sbox_HT1_gpt-4.1_A1.v
+2026-05-01 18:02:21,301 - INFO - Task aes_sbox.v-T1-v1: Completed successfully
+2026-05-01 18:02:21,303 - INFO - Starting task: aes_sbox.v-T4-v1
+2026-05-01 18:02:21,306 - INFO - Task aes_sbox.v-T4-v1: Constructing prompt
+2026-05-01 18:02:21,308 - INFO - Task aes_sbox.v-T4-v1: Making API call
+2026-05-01 18:02:21,311 - INFO - Making API call attempt 1/3
+2026-05-01 18:02:30,292 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 18:02:30,297 - INFO - API response received (2235 characters)
+2026-05-01 18:02:30,299 - INFO - Task aes_sbox.v-T4-v1: Extracting structured data
+2026-05-01 18:02:30,300 - INFO - Task aes_sbox.v-T4-v1: Saving results
+2026-05-01 18:02:30,304 - INFO - Saved Trojaned design to: ./trojaned_outputs\gpt-4.1\aes_sbox\aes_sbox_HT4_gpt-4.1_A1.v
+2026-05-01 18:02:30,308 - INFO - Task aes_sbox.v-T4-v1: Completed successfully
+2026-05-01 18:02:30,310 - INFO - Starting task: uart_controller.v-T1-v1
+2026-05-01 18:02:30,314 - INFO - Task uart_controller.v-T1-v1: Constructing prompt
+2026-05-01 18:02:30,315 - INFO - Task uart_controller.v-T1-v1: Making API call
+2026-05-01 18:02:30,317 - INFO - Making API call attempt 1/3
+2026-05-01 18:02:31,948 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 18:02:31,952 - INFO - API response received (3892 characters)
+2026-05-01 18:02:31,954 - INFO - Task aes_sbox.v-T3-v1: Extracting structured data
+2026-05-01 18:02:31,957 - INFO - Task aes_sbox.v-T3-v1: Saving results
+2026-05-01 18:02:31,960 - INFO - Saved Trojaned design to: ./trojaned_outputs\gpt-4.1\aes_sbox\aes_sbox_HT3_gpt-4.1_A1.v
+2026-05-01 18:02:31,966 - INFO - Task aes_sbox.v-T3-v1: Completed successfully
+2026-05-01 18:02:31,969 - INFO - Starting task: uart_controller.v-T2-v1
+2026-05-01 18:02:31,972 - INFO - Task uart_controller.v-T2-v1: Constructing prompt
+2026-05-01 18:02:31,973 - INFO - Task uart_controller.v-T2-v1: Making API call
+2026-05-01 18:02:31,975 - INFO - Making API call attempt 1/3
+2026-05-01 18:02:41,882 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 18:02:41,887 - INFO - API response received (3242 characters)
+2026-05-01 18:02:41,889 - INFO - Task uart_controller.v-T1-v1: Extracting structured data
+2026-05-01 18:02:41,892 - INFO - Task uart_controller.v-T1-v1: Saving results
+2026-05-01 18:02:41,897 - INFO - Saved Trojaned design to: ./trojaned_outputs\gpt-4.1\uart_controller\uart_controller_HT1_gpt-4.1_A1.v
+2026-05-01 18:02:41,902 - INFO - Task uart_controller.v-T1-v1: Completed successfully
+2026-05-01 18:02:41,903 - INFO - Starting task: uart_controller.v-T3-v1
+2026-05-01 18:02:41,905 - INFO - Task uart_controller.v-T3-v1: Constructing prompt
+2026-05-01 18:02:41,907 - INFO - Task uart_controller.v-T3-v1: Making API call
+2026-05-01 18:02:41,909 - INFO - Making API call attempt 1/3
+2026-05-01 18:02:45,188 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 18:02:45,192 - INFO - API response received (3381 characters)
+2026-05-01 18:02:45,194 - INFO - Task uart_controller.v-T2-v1: Extracting structured data
+2026-05-01 18:02:45,196 - INFO - Task uart_controller.v-T2-v1: Saving results
+2026-05-01 18:02:45,201 - INFO - Saved Trojaned design to: ./trojaned_outputs\gpt-4.1\uart_controller\uart_controller_HT2_gpt-4.1_A1.v
+2026-05-01 18:02:45,206 - INFO - Task uart_controller.v-T2-v1: Completed successfully
+2026-05-01 18:02:45,209 - INFO - Starting task: uart_controller.v-T4-v1
+2026-05-01 18:02:45,212 - INFO - Task uart_controller.v-T4-v1: Constructing prompt
+2026-05-01 18:02:45,216 - INFO - Task uart_controller.v-T4-v1: Making API call
+2026-05-01 18:02:45,218 - INFO - Making API call attempt 1/3
+2026-05-01 18:02:53,829 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 18:02:53,833 - INFO - API response received (2728 characters)
+2026-05-01 18:02:53,836 - INFO - Task uart_controller.v-T4-v1: Extracting structured data
+2026-05-01 18:02:53,837 - INFO - Task uart_controller.v-T4-v1: Saving results
+2026-05-01 18:02:53,841 - INFO - Saved Trojaned design to: ./trojaned_outputs\gpt-4.1\uart_controller\uart_controller_HT4_gpt-4.1_A1.v
+2026-05-01 18:02:53,844 - INFO - Task uart_controller.v-T4-v1: Completed successfully
+2026-05-01 18:02:56,692 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-01 18:02:56,697 - INFO - API response received (4449 characters)
+2026-05-01 18:02:56,700 - INFO - Task uart_controller.v-T3-v1: Extracting structured data
+2026-05-01 18:02:56,702 - INFO - Task uart_controller.v-T3-v1: Saving results
+2026-05-01 18:02:56,706 - INFO - Saved Trojaned design to: ./trojaned_outputs\gpt-4.1\uart_controller\uart_controller_HT3_gpt-4.1_A1.v
+2026-05-01 18:02:56,710 - INFO - Task uart_controller.v-T3-v1: Completed successfully
+2026-05-01 18:02:56,718 - INFO - Summary: 8 successful, 0 skipped, 0 failed

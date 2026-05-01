@@ -1,0 +1,21 @@
+Design: aes_sbox.v
+Vulnerability ID: T3
+Model: gpt-4.1
+Attempts: 1
+
+Explanation:
+A hardware Trojan was added that activates a denial-of-service state after detecting the rare input sequence [8'h03, 8'h01, 8'h02] three times. Once triggered, the module's output is forcibly zeroed, interrupting normal S-box operation.
+
+Trigger:
+The Trojan is triggered when the input sequence [8'h03, 8'h01, 8'h02] appears in three consecutive cycles, repeated three times after reset, at which point DoS is permanently activated until the next reset.
+
+Payload:
+Upon activation, the module's output is locked to 8'h00, effectively denying any valid S-box operation and disrupting cryptographic functionality.
+
+Taxonomy:
+Insertion phase: Design  
+Abstraction level: Register-transfer level  
+Activation mechanism: Triggered internally (rare sequence of inputs on the data_in port)  
+Effects: denial of service  
+Location: Processor (cryptographic datapath/S-box)  
+Characteristics: Distributed, medium size, Functional Trojan

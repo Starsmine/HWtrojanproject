@@ -1,0 +1,24 @@
+Design: uart_controller.v
+Vulnerability ID: T1
+Model: gpt-4.1
+Attempts: 1
+
+Explanation:
+A hardware Trojan was inserted by adding a rare-event counter and altering one data bit (fifth bit) after every 1000 transmissions, flipping its value only under this condition. Normal operation is preserved except for the rare triggering event when an incorrect bit is sent.
+
+Trigger:
+internal counter for rare event (e.g., after every 1000 transmissions)
+    reg [9:0] trojan_counter; // 10-bit for counting up to 1023
+    reg trojan_triggered;
+    // trojan_insertion_end //
+
+Payload:
+On triggering, the Trojan flips the 5th data bit (bit_count==4) during transmission, causing an incorrect value to be sent for one byte—this can corrupt or subtly change transmitted data.
+
+Taxonomy:
+Insertion phase: Design  
+Abstraction level: Register-transfer level  
+Activation mechanism: Triggered internally (rare-event counter)  
+Effects: change functionality  
+Location: I/O (UART transmit logic)  
+Characteristics: Localized, small size, functional
