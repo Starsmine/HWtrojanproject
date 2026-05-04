@@ -1,0 +1,78 @@
+🦠 TASK 4: Trojan Validation & Testing
+==================================================
+🔍 Validating 8 Trojaned designs...
+
+📋 Validating: aes_sbox_HT1_gpt-4.1_A1.v
+   ✅ Module structure found
+   🦠 Trojan markers detected
+   🔍 Found 2 suspicious patterns
+   ℹ️  Syntax validation skipped (iverilog not available)
+
+📋 Validating: aes_sbox_HT2_gpt-4.1_A1.v
+   ✅ Module structure found
+   🦠 Trojan markers detected
+   🔍 Found 4 suspicious patterns
+   ℹ️  Syntax validation skipped (iverilog not available)
+
+📋 Validating: aes_sbox_HT3_gpt-4.1_A1.v
+   ✅ Module structure found
+   🦠 Trojan markers detected
+   🔍 Found 8 suspicious patterns
+   ℹ️  Syntax validation skipped (iverilog not available)
+
+📋 Validating: aes_sbox_HT4_gpt-4.1_A1.v
+   ✅ Module structure found
+   🦠 Trojan markers detected
+   🔍 Found 2 suspicious patterns
+   ℹ️  Syntax validation skipped (iverilog not available)
+
+📋 Validating: uart_controller_HT1_gpt-4.1_A1.v
+   ✅ Module structure found
+   🦠 Trojan markers detected
+   🔍 Found 4 suspicious patterns
+   ℹ️  Syntax validation skipped (iverilog not available)
+
+📋 Validating: uart_controller_HT2_gpt-4.1_A1.v
+   ✅ Module structure found
+   🦠 Trojan markers detected
+   🔍 Found 6 suspicious patterns
+   ℹ️  Syntax validation skipped (iverilog not available)
+
+📋 Validating: uart_controller_HT3_gpt-4.1_A1.v
+   ✅ Module structure found
+   🦠 Trojan markers detected
+   🔍 Found 7 suspicious patterns
+   ℹ️  Syntax validation skipped (iverilog not available)
+
+📋 Validating: uart_controller_HT4_gpt-4.1_A1.v
+   ✅ Module structure found
+   🦠 Trojan markers detected
+   🔍 Found 3 suspicious patterns
+   ℹ️  Syntax validation skipped (iverilog not available)
+
+============================================================
+📊 VALIDATION SUMMARY
+============================================================
+📁 Files validated: 8
+✅ Valid module structure: 8/8
+✅ Syntax validation passed: 0/0
+🦠 Trojan indicators found: 8/8
+
+============================================================
+🔬 TESTING RECOMMENDATIONS
+============================================================
+1. 📐 Synthesis Testing:
+   • Use Yosys or Vivado to test synthesis
+   • Check for timing violations or resource usage
+
+2. 🎯 Trigger Testing:
+   • Create testbenches to verify trigger conditions
+   • Test both normal and Trojan-activated behavior
+
+3. 🔍 Detection Testing:
+   • Run static analysis tools on Trojaned designs
+   • Compare with clean versions for differences
+
+4. ⚡ Functional Testing:
+   • Verify original functionality still works
+   • Test edge cases and boundary conditions
